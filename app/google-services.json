@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "13872350442",
+    "firebase_url": "https://parque-de-ferias.firebaseio.com",
+    "project_id": "parque-de-ferias",
+    "storage_bucket": "parque-de-ferias.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13872350442:android:d4cf79481eddd789",
+        "android_client_info": {
+          "package_name": "com.parque.deferias"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13872350442-qlsp5jhf85ft03qrvoqavktn5q1rs8fh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.parque.deferias",
+            "certificate_hash": "24722b51b87afb096f2a3fb543976fac57d45471"
+          }
+        },
+        {
+          "client_id": "13872350442-j9hbqq1kp5ju7c1mb8t765p1mv7ld0n7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_JToNm65HX2E5frrX_-E5Rrmzi5eOFa4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13872350442-j9hbqq1kp5ju7c1mb8t765p1mv7ld0n7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

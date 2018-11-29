@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- no tocar -->
+    <string name="app_ad_id"> </string>
+    <string name="banner_ad_unit_id"> </string>
+    <string name="interstitial_ad_unit_id"> </string>
+    <!-- termina la seccion -->
+
+
+
+    <string name="app_name">Parque de Ferias App</string>
+    <string name="tagline">Incentivando a la Economía Familiar</string>
+
+    <string name="site_menu_home">Inicio</string>
+    <string name="site_menu_menus">Menu</string>
+    <string name="site_menu_categories">Categorias</string>
+    <string name="site_menu_favourite">Marcadores</string>
+    <string name="site_menu_home_cat">Inicio Categorias</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="empty_result">No hay información!</string>
+    <string name="openDrawer">Open Drawer</string>
+    <string name="closeDrawer">Close Drawer</string>
+
+    <string name="share_text">Parque de Feria App:</string>
+    <string name="send_to">Enviar a: </string>
+
+</resources>
