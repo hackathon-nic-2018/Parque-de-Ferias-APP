@@ -14,8 +14,6 @@ import com.parque.deferias.R;
 import com.parque.deferias.data.constant.AppConstant;
 import com.parque.deferias.utility.ActivityUtils;
 import com.parque.deferias.utility.AdUtils;
-import com.parque.deferias.utility.AppUtils;
-import com.parque.deferias.utility.FilePicker;
 import com.parque.deferias.utility.PermissionUtils;
 import com.parque.deferias.webengine.WebEngine;
 import com.parque.deferias.webengine.WebListener;
@@ -184,7 +182,7 @@ public class CustomLinkAndPageActivity extends BaseActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-
+            // Respond to the action bar's Up/Home button
             case android.R.id.home:
                 finish();
                 return true;

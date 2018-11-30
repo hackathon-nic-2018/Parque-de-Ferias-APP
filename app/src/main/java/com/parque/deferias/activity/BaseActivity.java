@@ -13,13 +13,17 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 
-
+import com.google.android.gms.ads.AdListener;
 import com.parque.deferias.R;
 
 import com.parque.deferias.data.constant.AppConstant;
+import com.parque.deferias.utility.ActivityUtils;
+import com.parque.deferias.utility.AdUtils;
+import com.parque.deferias.utility.PermissionUtils;
 
+/**
 
-
+ */
 public class BaseActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private Context mContext;
@@ -202,14 +206,30 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
             AppUtils.googlePlusLink(mActivity);
         }
 
+        // support
+        // else if (id == R.id.action_call) {
+        //     AppUtils.makePhoneCall(mActivity, AppConstant.CALL_NUMBER);
+        // } else if (id == R.id.action_message) {
+        //    AppUtils.sendSMS(mActivity, AppConstant.SMS_NUMBER, AppConstant.SMS_TEXT);
+        // } else if (id == R.id.action_messenger) {
+        //     AppUtils.invokeMessenger(mActivity);
+        //  } else if (id == R.id.action_email) {
+        //     AppUtils.sendEmail(mActivity, AppConstant.EMAIL_ADDRESS, AppConstant.EMAIL_SUBJECT, AppConstant.EMAIL_BODY);
+        //   }
 
+        // others
         else if (id == R.id.action_share) {
             AppUtils.shareApp(mActivity);
         } else if (id == R.id.action_rate_app) {
             AppUtils.rateThisApp(mActivity); // this feature will only work after publish the app
         } else if (id == R.id.action_settings) {
             ActivityUtils.getInstance().invokeActivity(mActivity, SettingsActivity.class, false);
-
+            //} else if (id == R.id.terms_conditions) {
+            //    ActivityUtils.getInstance().invokeCustomPostAndLink(mActivity, CustomLinkAndPageActivity.class, getResources().getString(R.string.terms), getResources().getString(R.string.terms_url), false);
+            // } else if (id == R.id.privacy_policy) {
+            //     ActivityUtils.getInstance().invokeCustomPostAndLink(mActivity, CustomLinkAndPageActivity.class, getResources().getString(R.string.privacy), getResources().getString(R.string.privacy_url), false);
+            // } else if (id == R.id.faq) {
+            // ActivityUtils.getInstance().invokeCustomPostAndLink(mActivity, CustomLinkAndPageActivity.class, getResources().getString(R.string.faq), getResources().getString(R.string.faq_url), false);
         } else if (id == R.id.action_exit) {
             AppUtils.appClosePrompt(mActivity);
         }

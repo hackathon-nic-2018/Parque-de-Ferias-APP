@@ -11,8 +11,10 @@ import android.view.View;
 
 import com.google.android.gms.ads.AdView;
 import com.parque.deferias.R;
+import com.parque.deferias.adapters.SelectableCategoryAdapter;
 import com.parque.deferias.api.http.ApiUtils;
 import com.parque.deferias.api.models.category.Category;
+import com.parque.deferias.api.params.HttpParams;
 import com.parque.deferias.data.constant.AppConstant;
 import com.parque.deferias.data.sqlite.SelectableCatDbController;
 import com.parque.deferias.listeners.ListItemClickListener;
@@ -33,7 +35,9 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
 
+ */
 
 public class HomeCategoriesActivity extends BaseActivity implements OnCategoryListChangedListener,
         OnStartDragListener {

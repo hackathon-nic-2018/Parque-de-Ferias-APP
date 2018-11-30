@@ -9,7 +9,6 @@ import android.widget.RelativeLayout;
 
 import com.parque.deferias.R;
 import com.parque.deferias.utility.ActivityUtils;
-import com.parque.deferias.utility.AppUtils;
 
 public class SplashActivity extends AppCompatActivity {
 

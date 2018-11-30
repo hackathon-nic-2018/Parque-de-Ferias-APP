@@ -1,7 +1,5 @@
 package com.parque.deferias.models;
 
-import com.parque.deferias.utility.AppUtils;
-
 /**
 
  */

@@ -2,6 +2,7 @@ package com.parque.deferias.activity;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -10,32 +11,27 @@ import android.view.MenuItem;
 import com.google.android.gms.ads.AdView;
 import com.parque.deferias.R;
 import com.parque.deferias.adapters.CategoryPagerAdapter;
-import com.parque.deferias.api.http.ApiUtils;
 import com.parque.deferias.api.models.category.Category;
-import com.parque.deferias.api.params.HttpParams;
+import com.parque.deferias.data.constant.AppConstant;
 import com.parque.deferias.utility.AdUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 /**
 
  */
 
-public class CategoryListActivity extends BaseActivity {
+public class SubCategoryListActivity extends BaseActivity {
 
     private Activity mActivity;
     private Context mContext;
 
     private ViewPager mViewPager;
-    private CategoryPagerAdapter mCategoryPagerAdapter;
+    private CategoryPagerAdapter categoryAdapter;
     private TabLayout tabLayout;
 
-    private int mPerPage = 5;
     private List<Category> categoryList;
     private List<Category> subCategoryList;
 
@@ -49,11 +45,17 @@ public class CategoryListActivity extends BaseActivity {
     }
 
     private void initVar() {
-        mActivity = CategoryListActivity.this;
+        mActivity = SubCategoryListActivity.this;
         mContext = mActivity.getApplicationContext();
 
         categoryList = new ArrayList<>();
         subCategoryList = new ArrayList<>();
+
+        Intent intent = getIntent();
+        if (intent != null) {
+            categoryList = getIntent().getParcelableArrayListExtra(AppConstant.BUNDLE_KEY_CATEGORY_LIST);
+            subCategoryList = getIntent().getParcelableArrayListExtra(AppConstant.BUNDLE_KEY_SUB_CATEGORY_LIST);
+        }
     }
 
     private void initView() {
@@ -61,71 +63,34 @@ public class CategoryListActivity extends BaseActivity {
         mViewPager = (ViewPager) findViewById(R.id.viewpager);
         tabLayout = (TabLayout) findViewById(R.id.tabs);
 
-        initLoader();
-
         initToolbar();
         setToolbarTitle(getString(R.string.category_list));
         enableBackButton();
 
+        initLoader();
+
     }
+
 
     private void initFunctionality() {
 
-        mCategoryPagerAdapter = new CategoryPagerAdapter(getSupportFragmentManager(), (ArrayList) categoryList, (ArrayList) subCategoryList);
-        mViewPager.setAdapter(mCategoryPagerAdapter);
+        categoryAdapter = new CategoryPagerAdapter(getSupportFragmentManager(), (ArrayList) categoryList, (ArrayList) subCategoryList);
+        mViewPager.setAdapter(categoryAdapter);
+        categoryAdapter.notifyDataSetChanged();
         tabLayout.setupWithViewPager(mViewPager);
 
-        showLoader();
-        loadCategories();
+        hideLoader();
 
         // show banner ads
         AdUtils.getInstance(mContext).showBannerAd((AdView) findViewById(R.id.adView));
 
     }
 
-    public void loadCategories() {
-        ApiUtils.getApiInterface().getCategories(mPerPage).enqueue(new Callback<List<Category>>() {
-            @Override
-            public void onResponse(Call<List<Category>> call, Response<List<Category>> response) {
-                if (response.isSuccessful()) {
-
-                    int totalPages = Integer.parseInt(response.headers().get(HttpParams.HEADER_TOTAL_PAGE));
-
-                    if (totalPages > 1) {
-                        mPerPage = mPerPage * totalPages;
-                        loadCategories();
-
-                    } else {
-                        categoryList.addAll(response.body());
-                        for (Category category : categoryList) {
-                            if (category.getParent().intValue() == 0) {
-                                subCategoryList.add(category);
-                            }
-                        }
-
-                        mCategoryPagerAdapter.notifyDataSetChanged();
-
-                    }
-
-                    hideLoader();
-                } else {
-                    showEmptyView();
-                }
-            }
-
-            @Override
-            public void onFailure(Call<List<Category>> call, Throwable t) {
-                t.printStackTrace();
-                hideLoader();
-                showEmptyView();
-            }
-        });
-    }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
             case android.R.id.home:
                 finish();
                 return true;

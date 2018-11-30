@@ -8,6 +8,7 @@ import android.text.Html;
 
 import com.parque.deferias.api.models.category.Category;
 import com.parque.deferias.data.constant.AppConstant;
+import com.parque.deferias.fragment.PostListFragment;
 import com.parque.deferias.fragment.SubCategoryListFragment;
 
 import java.util.ArrayList;

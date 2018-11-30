@@ -1,13 +1,11 @@
 <resources>
 
-    <!-- no tocar -->
-    <string name="app_ad_id"> </string>
-    <string name="banner_ad_unit_id"> </string>
-    <string name="interstitial_ad_unit_id"> </string>
-    <!-- termina la seccion -->
 
 
 
+
+
+    <!-- Nombre de la app -->
     <string name="app_name">Parque de Ferias App</string>
     <string name="tagline">Incentivando a la Economía Familiar</string>
 
@@ -17,6 +15,11 @@
     <string name="site_menu_favourite">Marcadores</string>
     <string name="site_menu_home_cat">Inicio Categorias</string>
 
+    <string name="social">Social</string>
+    <string name="youtube">MEFCCA</string>
+   <string name="facebook">Facebook</string>
+   <string name="twitter">Twitter</string>
+   <string name="google_plus">Como llegar</string>
 
 
 
@@ -24,17 +27,17 @@
 
 
 
+    <string name="featured_posts">Agenda semanal</string>
+    <string name="see_more">Ver más</string>
+    <string name="recent_posts">Publicaciones Recientes</string>
+    <string name="favourite">Marcadores</string>
+    <string name="category_list">Categorias</string>
+    <string name="home_cat_list">Inicio Categorias</string>
+    <string name="menu_list">Menus</string>
+    <string name="loadmore">Cargando más publicaciones, Favor esperar...</string>
+    <string name="details">Detalles de la Publicación</string>
 
 
 
-
-
-
-    <string name="empty_result">No hay información!</string>
-    <string name="openDrawer">Open Drawer</string>
-    <string name="closeDrawer">Close Drawer</string>
-
-    <string name="share_text">Parque de Feria App:</string>
-    <string name="send_to">Enviar a: </string>
 
 </resources>

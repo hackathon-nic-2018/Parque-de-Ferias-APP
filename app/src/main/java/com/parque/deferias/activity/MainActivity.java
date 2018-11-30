@@ -21,8 +21,11 @@ import android.widget.TextView;
 
 import com.google.android.gms.ads.AdView;
 import com.parque.deferias.R;
+import com.parque.deferias.adapters.FeaturedPagerAdapter;
 import com.parque.deferias.adapters.HomeCategoryAdapter;
+import com.parque.deferias.adapters.HomeSelectableCategoryAdapter;
 import com.parque.deferias.adapters.MenuCommonAdapter;
+import com.parque.deferias.adapters.PostsAdapter;
 import com.parque.deferias.api.http.ApiUtils;
 import com.parque.deferias.api.models.category.Category;
 import com.parque.deferias.api.models.menus.AnyMenu;
@@ -30,6 +33,7 @@ import com.parque.deferias.api.models.menus.MainMenu;
 import com.parque.deferias.api.models.menus.SubMenu;
 import com.parque.deferias.api.models.menus.SubMenuItem;
 import com.parque.deferias.api.models.posts.post.Post;
+import com.parque.deferias.api.params.HttpParams;
 import com.parque.deferias.data.constant.AppConstant;
 import com.parque.deferias.data.sqlite.NotificationDbController;
 import com.parque.deferias.data.sqlite.SelectableCatDbController;
@@ -38,7 +42,6 @@ import com.parque.deferias.models.NotificationModel;
 import com.parque.deferias.models.SelectableCategoryModel;
 import com.parque.deferias.utility.ActivityUtils;
 import com.parque.deferias.utility.AdUtils;
-import com.parque.deferias.utility.AppUtils;
 
 import java.util.ArrayList;
 import java.util.List;

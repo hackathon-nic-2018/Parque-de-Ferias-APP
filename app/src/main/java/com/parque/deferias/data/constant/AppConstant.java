@@ -1,6 +1,8 @@
 package com.parque.deferias.data.constant;
 
+/**
 
+ */
 
 public class AppConstant {
 
@@ -45,7 +47,18 @@ public class AppConstant {
     public static final int DEFAULT_PAGE = 1;
 
 
+    // replace call number, sms number and email address by yours
+    public static final String CALL_NUMBER = "911"; // replace by your support number
 
+    public static final String SMS_NUMBER = "+123456789"; // replace by your support sms number
+    public static final String SMS_TEXT = "Envienos sus sujerencias..."; // replace by your message
+
+    public static final String EMAIL_ADDRESS = "bono.gaitan@mail.com"; // replace by your support sms number
+    public static final String EMAIL_SUBJECT = "Realimentación"; // replace by your message
+    public static final String EMAIL_BODY = "Envienos sus comentarios..."; // replace by your message
+
+
+    // Menu item type
     public static final String MENU_ITEM_CATEGORY = "category";
     public static final String MENU_ITEM_PAGE = "page";
     public static final String MENU_ITEM_CUSTOM = "custom";

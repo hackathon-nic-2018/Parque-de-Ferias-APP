@@ -6,7 +6,6 @@ import android.os.Parcelable;
 import com.google.gson.annotations.SerializedName;
 import com.parque.deferias.api.models.posts.commons.Embedded;
 import com.parque.deferias.api.models.posts.commons.Title;
-import com.parque.deferias.utility.AppUtils;
 
 /**
 
