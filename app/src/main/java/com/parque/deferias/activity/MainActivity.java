@@ -436,6 +436,7 @@ public class MainActivity extends BaseActivity {
 
     public void loadMenus() {
 
+
         ApiUtils.getApiInterface().getMenus().enqueue(new Callback<List<MainMenu>>() {
             @Override
             public void onResponse(Call<List<MainMenu>> call, Response<List<MainMenu>> response) {
