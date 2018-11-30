@@ -44,7 +44,7 @@
    <!-- final de la configuracion del sitio-->
     
     <!-- app link del sitio plataforma de control: www.myimagina.website -->
-    <!--<string name="app_link_base_url">myimagina.website</string> -->
+    <string name="app_link_base_url">myimagina.website</string>
     <string name="app_link_path_prefix">myimagina.website</string>
     <!-- end of the app link section -->
 
