@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 
 import com.parque.deferias.R;
+import com.parque.deferias.activity.NotificationDetailsActivity;
 import com.parque.deferias.api.models.category.Category;
 import com.parque.deferias.api.models.menus.SubMenuItem;
 import com.parque.deferias.api.models.posts.post.CommentsAndReplies;

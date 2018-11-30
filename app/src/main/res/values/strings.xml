@@ -1,7 +1,6 @@
 <resources>
 
-
-
+   
 
 
 
@@ -25,6 +24,13 @@
 
 
 
+   <string name="share">Compartir</string>
+   <string name="rate">Calificar aplicación</string>
+   <string name="settings">Ajustes</string>
+   <string name="exit">Salir</string>
+   <!-- final de la configuracion del sitio-->
+    
+
 
 
     <string name="featured_posts">Agenda semanal</string>
@@ -39,5 +45,51 @@
 
 
 
+
+
+    <string name="empty_result">No hay información!</string>
+    <string name="openDrawer">Open Drawer</string>
+    <string name="closeDrawer">Close Drawer</string>
+
+    <string name="share_text">Parque de Feria App:</string>
+    <string name="send_to">Enviar a: </string>
+
+    <string name="close_prompt">Seguro que quieres cerrar la aplicación?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+
+    <string name="install_messenger">Instalar facebook messenger</string>
+    <string name="tts_wait_msg">Este artículo será leído en breve. Por favor, espera un momento...</string>
+    <string name="tts_install_msg">Por favor instale el paquete de inglés desde aquí</string>
+
+
+    // Notification
+
+
+    <string name="small_text">Pequeña</string>
+    <string name="default_text">Normal</string>
+    <string name="large_text">Grande</string>
+
+    <string name="matches">matches</string>
+    <string name="placeholder">..</string>
+    <string name="notifications">Notifications</string>
+    <string name="read_post">Leer publicación</string>
+    <string name="notification_title">Título de la notificación: </string>
+    <string name="notification_details">Detalles de la notificación: </string>
+
+    <string name="failed">Ha fallado</string>
+
+    <string name="comment_reply">Respuesta</string>
+    <string name="comment_replies">respuestas</string>
+
+    <string name="admin">Administrador</string>
+    <string name="default_str">Default</string>
+    <string name="author_name">Me</string>
+
+    <string name="all_comment">Todos los comentarios (%d)</string>
+
+    <string name="delete_fav_item">Quieres eliminar esta publicación de la lista de marcadores?</string>
+    <string name="delete_all_fav_item">Desea eliminar todas las publicaciones de la lista de marcadores?</string>
+    <string name="delete_all">Borrar todo</string>
 
 </resources>

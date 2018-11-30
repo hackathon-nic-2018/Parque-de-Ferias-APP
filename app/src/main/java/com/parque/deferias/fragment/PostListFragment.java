@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.parque.deferias.R;
+import com.parque.deferias.activity.PostDetailsActivity;
 import com.parque.deferias.adapters.PostsAdapter;
 import com.parque.deferias.api.http.ApiUtils;
 import com.parque.deferias.api.models.posts.post.Post;

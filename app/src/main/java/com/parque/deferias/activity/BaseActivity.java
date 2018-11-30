@@ -13,12 +13,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.google.android.gms.ads.AdListener;
+i
 import com.parque.deferias.R;
 
 import com.parque.deferias.data.constant.AppConstant;
 import com.parque.deferias.utility.ActivityUtils;
 import com.parque.deferias.utility.AdUtils;
+import com.parque.deferias.utility.AppUtils;
 import com.parque.deferias.utility.PermissionUtils;
 
 /**
@@ -189,8 +190,7 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
             showAdThenActivity(MenuListActivity.class, false);
         } else if (id == R.id.action_categories) {
             showAdThenActivity(CategoryListActivity.class, false);
-        } else if (id == R.id.action_favourite) {
-            showAdThenActivity(FavouriteListActivity.class, false);
+
         } else if (id == R.id.action_home_cat) {
             showAdThenActivity(HomeCategoriesActivity.class, false);
         }

@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.parque.deferias.R;
+import com.parque.deferias.activity.PostDetailsActivity;
 import com.parque.deferias.api.models.posts.post.Post;
 import com.parque.deferias.listeners.ListItemClickListener;
 import com.parque.deferias.models.SelectableCategoryModel;

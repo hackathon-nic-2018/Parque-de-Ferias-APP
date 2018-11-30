@@ -43,6 +43,11 @@
 
 
         <activity
+            android:name="com.parque.deferias.activity.NotificationDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/AppTheme"/>
+
+        <activity
             android:name="com.parque.deferias.activity.CategoryListActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:theme="@style/AppTheme"/>
@@ -63,12 +68,22 @@
             android:theme="@style/AppTheme"/>
 
         <activity
-            android:name="com.parque.deferias.activity.SubSubMenuListActivity"
+            android:name="com.parque.deferias.activity.PostDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/DetailsActivityTheme"/>
+
+        <activity
+            android:name="com.parque.deferias.activity.CustomLinkAndPageActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:theme="@style/AppTheme"/>
 
         <activity
-            android:name="com.parque.deferias.activity.CustomLinkAndPageActivity"
+            android:name="com.parque.deferias.activity.CommentListActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name="com.parque.deferias.activity.CommentDetailsActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:theme="@style/AppTheme"/>
 
