@@ -7,9 +7,9 @@
     <!-- termina la seccion -->
 
     <!-- app social site links section -->
-    <string name="facebook_url">https://www.facebook.com/laferiamanagua/?rf=806230316221697</string>
+    <string name="facebook_url">https://www.facebook.com/Parque-de-Ferias-APP-569631603459937/</string>
     <string name="youtube_url">http://www.economiafamiliar.gob.ni/</string>
-    <string name="twitter_user_id">twitter://user?user_id=</string> <!-- find your user id from here: http://gettwitterid.com/  -->
+    <string name="twitter_user_id">https://twitter.com/feriasApp18</string> <!-- find your user id from here: http://gettwitterid.com/  -->
     <string name="twitter_url">https://twitter.com/parquedeferia?lang=es</string>
     <string name="google_plus_url">https://www.google.com.ni/maps/dir//Parque+De+Ferias,+Managua/@12.1063996,-86.2922532,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8f7155b1c867d243:0x2ec47ac0e1bf8315!2m2!1d-86.2900523!2d12.1055944!3e0</string>
 
