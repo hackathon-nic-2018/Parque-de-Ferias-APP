@@ -1,12 +1,25 @@
 <resources>
 
-   
+    <!-- no tocar -->
+    <string name="app_ad_id"> </string>
+    <string name="banner_ad_unit_id"> </string>
+    <string name="interstitial_ad_unit_id"> </string>
+    <!-- termina la seccion -->
+
+    <!-- app social site links section -->
+    <string name="facebook_url">https://www.facebook.com/laferiamanagua/?rf=806230316221697</string>
+    <string name="youtube_url">http://www.economiafamiliar.gob.ni/</string>
+    <string name="twitter_user_id">twitter://user?user_id=</string> <!-- find your user id from here: http://gettwitterid.com/  -->
+    <string name="twitter_url">https://twitter.com/parquedeferia?lang=es</string>
+    <string name="google_plus_url">https://www.google.com.ni/maps/dir//Parque+De+Ferias,+Managua/@12.1063996,-86.2922532,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8f7155b1c867d243:0x2ec47ac0e1bf8315!2m2!1d-86.2900523!2d12.1055944!3e0</string>
+
+    <!-- terrminos y condiciones del uso de la app -->
 
 
 
     <!-- Nombre de la app -->
     <string name="app_name">Parque de Ferias App</string>
-    <string name="tagline">Incentivando a la Economía Familiar</string>
+    <string name="tagline">Comunitaria, Cooperativa y Asociativa</string>
 
     <string name="site_menu_home">Inicio</string>
     <string name="site_menu_menus">Menu</string>
@@ -30,7 +43,10 @@
    <string name="exit">Salir</string>
    <!-- final de la configuracion del sitio-->
     
-
+    <!-- app link del sitio plataforma de control: www.myimagina.website -->
+    <!--<string name="app_link_base_url">myimagina.website</string> -->
+    <string name="app_link_path_prefix">myimagina.website</string>
+    <!-- end of the app link section -->
 
 
     <string name="featured_posts">Agenda semanal</string>
@@ -44,7 +60,26 @@
     <string name="details">Detalles de la Publicación</string>
 
 
-
+    <string name="post_list">Lista de publicaciones</string>
+    <string name="tapAgain">Toque de nuevo para salir!</string>
+    <string name="no_internet">Sin internet!</string>
+    <string name="connect">Conectar</string>
+    <string name="others">Otros</string>
+    <string name="search">Buscar</string>
+    <string name="refresh">Refrescar</string>
+    <string name="close">Cerrar</string>
+    <string name="says">Dilo: </string>
+    <string name="comments">Comentarios: </string>
+    <string name="comment_list">Lista de comentarios</string>
+    <string name="write_a_comment">Escribe algo...</string>
+    <string name="reply">Contestar</string>
+    <string name="comment_details">Detalles del comentario</string>
+    <string name="welcome_message">Bienvenidos</string>
+    <string name="successful_reply">Respondió exitosamente!</string>
+    <string name="error_message">Lo sentimos, algunos errores ocurrieron!</string>
+    <string name="successful_comment">Comentado con éxito!</string>
+    <string name="custom_link">Enlace personalizado</string>
+    <string name="permission_not_granted">Permission not granted!</string>
 
 
     <string name="empty_result">No hay información!</string>
@@ -64,7 +99,15 @@
 
 
     // Notification
-
+    <string name="pref_notification_title">Notificación</string>
+    <string name="pref_notification_summ">Activar / desactivar la notificación</string>
+    <string name="pref_zoom_title">Controlador de zoom</string>
+    <string name="pref_zoom_summ">Habilitar el controlador de zoom para acercar / alejar páginas</string>
+    <string name="pref_text_title">Tamano del texto</string>
+    <string name="select_size">Seleccionar tamaño de texto</string>
+    <string name="delete_notify_msg">Quieres borrar esta notificación?</string>
+    <string name="delete_all_notify_msg">Quieres borrar todas las notificaciones?</string>
+    <string name="empty_list">La lista ya está vacía!</string>
 
     <string name="small_text">Pequeña</string>
     <string name="default_text">Normal</string>

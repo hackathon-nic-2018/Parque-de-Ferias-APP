@@ -32,6 +32,7 @@ import com.parque.deferias.listeners.ListItemClickListener;
 import com.parque.deferias.models.FavouriteModel;
 import com.parque.deferias.utility.ActivityUtils;
 import com.parque.deferias.utility.AppUtils;
+import com.parque.deferias.utility.TtsEngine;
 import com.parque.deferias.webengine.WebEngine;
 import com.parque.deferias.webengine.WebListener;
 

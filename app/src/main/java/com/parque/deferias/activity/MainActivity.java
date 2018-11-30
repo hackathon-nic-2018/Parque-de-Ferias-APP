@@ -53,13 +53,13 @@ import retrofit2.Response;
 
 public class MainActivity extends BaseActivity {
 
-
+    // Variables
     private Activity mActivity;
     private Context mContext;
     private int perPageCount = 5;
     private int currentCategoryIndex = 0;
 
-
+    // Views
     private ImageButton imgBtnSearch;
     private ScrollView lytContent;
     private SwipeRefreshLayout swipeRefreshLayout;
@@ -67,20 +67,22 @@ public class MainActivity extends BaseActivity {
     private TextView tvFeaturedSeeMore, tvRecentSeeMore;
 
 
+    // List utilities
 
+    // menu list
     private List<MainMenu> mainMenuList;
     private List<SubMenuItem> subMenuItems;
     private List<AnyMenu> anyMenuList;
     private MenuCommonAdapter menusAdapter = null;
     private RecyclerView rvMenus;
 
-
+    // featured list
     private List<Post> featuredPostList;
     private RelativeLayout mFeaturedLayout;
     private ViewPager pagerFeaturedPost;
     private FeaturedPagerAdapter featuredPostAdapter = null;
 
-
+    // recent list
     private Post firstPost = null;
     private List<Post> recentPostList;
     private RecyclerView postsRecyclerView;

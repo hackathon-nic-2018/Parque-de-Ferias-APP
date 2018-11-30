@@ -13,7 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 
-i
+import com.google.android.gms.ads.AdListener;
 import com.parque.deferias.R;
 
 import com.parque.deferias.data.constant.AppConstant;
@@ -190,7 +190,8 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
             showAdThenActivity(MenuListActivity.class, false);
         } else if (id == R.id.action_categories) {
             showAdThenActivity(CategoryListActivity.class, false);
-
+        } else if (id == R.id.action_favourite) {
+            showAdThenActivity(FavouriteListActivity.class, false);
         } else if (id == R.id.action_home_cat) {
             showAdThenActivity(HomeCategoriesActivity.class, false);
         }

@@ -43,6 +43,17 @@
 
 
         <activity
+            android:name="com.parque.deferias.activity.SettingsActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name="com.parque.deferias.activity.NotificationActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/AppTheme"/>
+
+
+        <activity
             android:name="com.parque.deferias.activity.NotificationDetailsActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:theme="@style/AppTheme"/>
@@ -68,6 +79,11 @@
             android:theme="@style/AppTheme"/>
 
         <activity
+            android:name="com.parque.deferias.activity.SubSubMenuListActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/AppTheme"/>
+
+        <activity
             android:name="com.parque.deferias.activity.PostDetailsActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:theme="@style/DetailsActivityTheme"/>
@@ -84,6 +100,21 @@
 
         <activity
             android:name="com.parque.deferias.activity.CommentDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name="com.parque.deferias.activity.SearchActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable">
+            </meta-data>
+        </activity>
+
+        <activity
+            android:name="com.parque.deferias.activity.FavouriteListActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:theme="@style/AppTheme"/>
 
